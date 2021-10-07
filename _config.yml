@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Array API Demo
-author: Quansight Labs
+author: Anirudh Dagar, Ralf Gommers
 logo: data_apis_logo.png
 
 # Force re-execution of notebooks on each build.
@@ -21,9 +21,9 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/anirudhdagar/array-api-demo  # Online location of your book
+  url: https://github.com/quansight-labs/array-api-demo  # Online location of your book
   path_to_book: docs  # Optional path to your book, relative to the repository root
-  branch: master  # Which branch of the repository should be used when creating links (optional)
+  branch: main  # Which branch of the repository should be used when creating links (optional)
 
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
