@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -42,7 +42,7 @@
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -79,7 +79,7 @@
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -151,11 +151,11 @@
         aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
     <div class="dropdown-buttons sourcebuttons">
         <a class="repository-button"
-            href="https://github.com/anirudhdagar/array-api-demo"><button type="button" class="btn btn-secondary topbarbtn"
+            href="https://github.com/quansight-labs/array-api-demo"><button type="button" class="btn btn-secondary topbarbtn"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/anirudhdagar/array-api-demo/issues/new?title=Issue%20on%20page%20%2FGW_Demo_Array_API.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/quansight-labs/array-api-demo/issues/new?title=Issue%20on%20page%20%2FGW_Demo_Array_API.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -176,7 +176,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/anirudhdagar/array-api-demo/master?urlpath=tree/docs/GW_Demo_Array_API.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/quansight-labs/array-api-demo/main?urlpath=tree/docs/GW_Demo_Array_API.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -196,7 +196,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
+            <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#a-guide-to-ligo-virgo-detector-noise">
@@ -355,6 +355,27 @@
 <span class="c1"># Note: This has been edited for the PyTorch demo with array-api available at,</span>
 <span class="c1">#       https://github.com/AnirudhDagar/array-api-demo/blob/master/readligo.py</span>
 <span class="kn">import</span> <span class="nn">readligo</span> <span class="k">as</span> <span class="nn">rl</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">folders</span><span class="o">/</span><span class="n">zk</span><span class="o">/</span><span class="n">wctnbpzn05bgl3h0h8mn0q140000gn</span><span class="o">/</span><span class="n">T</span><span class="o">/</span><span class="n">ipykernel_60761</span><span class="o">/</span><span class="mf">2752603362.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="kn">import</span> <span class="nn">math</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="kn">import</span> <span class="nn">scipy</span>
+<span class="ne">---&gt; </span><span class="mi">10</span> <span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">signal</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> <span class="kn">from</span> <span class="nn">scipy.interpolate</span> <span class="kn">import</span> <span class="n">interp1d</span>  <span class="c1"># Not compatible yet</span>
+<span class="g g-Whitespace">     </span><span class="mi">12</span> <span class="kn">from</span> <span class="nn">scipy.signal</span> <span class="kn">import</span> <span class="n">butter</span><span class="p">,</span> <span class="n">filtfilt</span>  <span class="c1"># Not compatible yet</span>
+
+<span class="o">~/</span><span class="n">Desktop</span><span class="o">/</span><span class="n">Work</span><span class="o">/</span><span class="n">scipy</span><span class="o">/</span><span class="n">scipy</span><span class="o">/</span><span class="n">signal</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">    </span><span class="mi">295</span> <span class="kn">from</span> <span class="nn">._upfirdn</span> <span class="kn">import</span> <span class="n">upfirdn</span>
+<span class="g g-Whitespace">    </span><span class="mi">296</span> 
+<span class="ne">--&gt; </span><span class="mi">297</span> <span class="kn">from</span> <span class="nn">._spline</span> <span class="kn">import</span> <span class="p">(</span>  <span class="c1"># noqa: F401</span>
+<span class="g g-Whitespace">    </span><span class="mi">298</span>  <span class="n">cspline2d</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">299</span>  <span class="n">qspline2d</span><span class="p">,</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;scipy.signal._spline&#39;
 </pre></div>
 </div>
 </div>
@@ -861,23 +882,11 @@ by contrast, un-windowed data produce strongly correlated fourier phases that ar
               </div>
               
         
+        <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">Array Libraries Interoperability</a>
 
-
-
-<div class='prev-next-bottom'>
-    
-    <div id="prev">
-        <a class="left-prev" href="intro.html" title="previous page">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">previous</p>
-                <p class="prevnext-title">Array Libraries Interoperability</p>
-            </div>
-        </a>
-    </div>
-
-</div>
+        </div>
         
         </div>
     </div>
@@ -885,7 +894,7 @@ by contrast, un-windowed data produce strongly correlated fourier phases that ar
     <div class="container">
       <p>
         
-          By Quansight Labs<br/>
+          By Anirudh Dagar, Ralf Gommers<br/>
         
             &copy; Copyright 2021.<br/>
       </p>
