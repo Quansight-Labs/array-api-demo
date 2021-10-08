@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Notebook for data guide paper &#8212; Array API Demo</title>
+    <title>Array API Demo &#8212; Array API Demo</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -180,9 +180,21 @@
             </div>
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#array-api-demo">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
    Array API Demo
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#build-deploy-instructions">
+     Build &amp; Deploy Instructions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acknowledgement">
+   Acknowledgement
   </a>
  </li>
 </ul>
@@ -196,17 +208,28 @@
         
               <div>
                 
-  <div class="section" id="notebook-for-data-guide-paper">
-<h1>Notebook for data guide paper<a class="headerlink" href="#notebook-for-data-guide-paper" title="Permalink to this headline">¶</a></h1>
-<p>This notebook reproduces key plots in the data guide paper (<a class="reference external" href="https://arxiv.org/abs/1908.11170">https://arxiv.org/abs/1908.11170</a>) in python. The Jupyter Notebook focuses on gravitational wave event GW150914, and covers issues such as windowing and Fourier transforms, power spectral estimation, maximizing the likelihood for numerical relativity templates and exploring correlations in the data and residuals.  For code used to
-produce published figures, see <a class="reference external" href="https://github.com/gw-odw/Data-Guide-Paper">https://github.com/gw-odw/Data-Guide-Paper</a></p>
-<p>Click a badge to run the notebook:
-<a class="reference external" href="https://mybinder.org/v2/gh/losc-tutorial/Data_Guide/master?filepath=Guide_Notebook.ipynb"><img alt="Binder" src="https://mybinder.org/badge_logo.svg" /></a>
-<a class="reference external" href="https://colab.research.google.com/github/losc-tutorial/Data_Guide/blob/master/Guide_Notebook.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
-<div class="section" id="array-api-demo">
-<h2>Array API Demo<a class="headerlink" href="#array-api-demo" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="array-api-demo">
+<h1>Array API Demo<a class="headerlink" href="#array-api-demo" title="Permalink to this headline">¶</a></h1>
+<p>This notebook reproduces key plots in the data guide paper (<a class="reference external" href="https://arxiv.org/abs/1908.11170">https://arxiv.org/abs/1908.11170</a>) in python. The demo focuses on gravitational wave event GW150914, and covers issues such as windowing and Fourier transforms, power spectral estimation, maximizing the likelihood for numerical relativity templates and exploring correlations in the data and residuals.  For code used to
+produce published figures, see <a class="reference external" href="https://github.com/gw-odw/Data-Guide-Paper">https://github.com/gw-odw/Data-Guide-Paper</a>. This demo is inspired and built on top of <a class="reference external" href="https://github.com/losc-tutorial/Data_Guide">https://github.com/losc-tutorial/Data_Guide</a>. We would like to extend credits to the original implementation. We use the <a class="reference external" href="https://jupyterbook.org/">https://jupyterbook.org/</a> to build the executable notebooks.</p>
+<p>The main idea behind this demo is to showcase the use of PyTorch Tensors with SciPy modules. This is possible with <a class="reference external" href="https://numpy.org/neps/nep-0047-array-api-standard.html">NEP 47</a> or <a class="reference external" href="https://data-apis.org/array-api/latest/">Array API</a>.</p>
 <p>Please use <a class="reference external" href="https://github.com/AnirudhDagar/scipy/tree/array-api-demo">this</a> SciPy branch for this demo.</p>
+<div class="section" id="build-deploy-instructions">
+<h2>Build &amp; Deploy Instructions<a class="headerlink" href="#build-deploy-instructions" title="Permalink to this headline">¶</a></h2>
+<p>First build the jupyter book html files using the following command. This will execute all the markdown and ipynb files and create a <code class="docutils literal notranslate"><span class="pre">_build/html</span></code> dir with the website built.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter-book build .
+</pre></div>
 </div>
+<p>Branch <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> holds the deployed website. To update the deployment, use <code class="docutils literal notranslate"><span class="pre">ghp-import</span></code>. Inside the repo, run the following to update the deployed website with the current build.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ghp</span><span class="o">-</span><span class="kn">import</span> <span class="o">-</span><span class="n">n</span> <span class="o">-</span><span class="n">p</span> <span class="o">-</span><span class="n">f</span> <span class="n">_build</span><span class="o">/</span><span class="n">html</span>
+</pre></div>
+</div>
+<p>For more information, please refer to <a class="reference external" href="https://jupyterbook.org/start/your-first-book.html">https://jupyterbook.org/start/your-first-book.html</a>.</p>
+</div>
+</div>
+<div class="section" id="acknowledgement">
+<h1>Acknowledgement<a class="headerlink" href="#acknowledgement" title="Permalink to this headline">¶</a></h1>
+<p>Work done during the development of this demo was generously supported by <a class="reference external" href="https://labs.quansight.org/">Quansight Labs</a>.</p>
 </div>
 
     <script type="text/x-thebe-config">
